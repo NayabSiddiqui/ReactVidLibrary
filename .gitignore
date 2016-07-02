@@ -3,9 +3,3 @@ node_modules/
 npm-debug.log
 npm-debug.log.2458015706
 npm-debug.log.3673618538
-package.json
-react-redux-intro.iml
-src/
-test/
-tools/
-webpack.config.dev.js
