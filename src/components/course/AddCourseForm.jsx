@@ -24,7 +24,7 @@ class AddCourseForm extends React.Component {
         this.props.onSubmit(this.state.course);
         this.setState({
             course: {title: ''}
-        });
+        }); 
     };
 
     render() {
