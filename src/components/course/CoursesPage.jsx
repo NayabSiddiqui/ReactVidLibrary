@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import AddCourseForm from './AddCourseForm';
+import CourseList from './CourseList';
 
 class CoursePage extends React.Component {
     constructor(props, context) {
@@ -20,11 +21,13 @@ class CoursePage extends React.Component {
     };
 
     render() {
+        //The following is called destructuring
+        const {courses} = this.props;
         return (
             <div>
                 <h1>Courses</h1>
-                {this.props.courses.map(this.courseRow)}
                 <AddCourseForm onSubmit={this.onClickSave}/>
+                <CourseList courses={courses}/>
             </div>
         );
     };
