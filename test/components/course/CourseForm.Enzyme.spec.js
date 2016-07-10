@@ -2,7 +2,6 @@ import {should} from 'chai';
 should();
 import React from 'react';
 import {mount, shallow} from 'enzyme';
-import TestUtils from 'react-addons-test-utils';
 import CourseForm from '../../../src/components/course/CourseForm';
 
 function setup(saving = false) {
